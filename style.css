@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Lexend Deca', sans-serif;
+    transition:0s;
+
+}
+
+body{
+    background:#333;
+}
+
+.clock{
+    position:relative ;
+    margin:100px auto;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background-color:#333;
+}
+
+.digital{
+    position:absolute ;
+    color:white;
+    top:200px;
+    left:120px;
+}
+
+.number{
+    position:absolute ;
+    font-size:2em;
+    color:white;
+}
+
+.number:nth-child(1){
+    top:15px;
+    left:calc(150px - 0.5em);
+}
+
+.number:nth-child(2){
+    right:15px;
+    top:calc(150px - 0.55em);
+}
+
+.number:nth-child(3){
+    left:calc(150px - 0.25em);
+    bottom:15px;
+}
+.number:nth-child(4){
+    left:15px;
+    top:calc(150px - 0.55em);
+}
+
+#hour, #minute, #second{
+    position:absolute ;
+    background:white;
+    height:4px;
+    transform-origin: 2px 2px;
+    border-radius:2px 50% 50% 2px;
+}
+
+#hour{
+    width:60px;
+    top:149px;
+    left:148px;
+}
+
+#minute{
+    width:85px;
+    top:149px;
+    left:148px;
+}
+
+#second{
+    width:100px;
+    top:149px;
+    left:148px;
+    background:red;
+}
+
+.secbox{
+    position:absolute ;
+    width:10px;
+    height:2px;
+    background:white;
+    top:149px;
+    right:3px;
+    transform-origin: -137px 1px;
+    transition:0s;
+}
